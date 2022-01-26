@@ -1,0 +1,9 @@
+[debug] > Exec(assembly, None, None)
+[debug] Evaluating tasks: assembly
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[warn] multiple main classes detected: run 'show discoveredMainClasses' to see the list
+[info] Strategy 'discard' was applied to 12 files (Run the task at debug level to see details)
+[info] Strategy 'first' was applied to a file (Run the task at debug level to see details)
+[info] Assembly up to date: C:\Users\LuisHernandoCorreaZa\IdeaProjects\cdrprocessor-20220120T210553Z-001\cdrprocessor\target\scala-2.11\0080_DATOS_CARGUE_RE-BLT-assembly-0.1.jar
+[success] Total time: 2 s, completed 26/01/2022 05:50:08 AM
+[debug] > Exec(idea-shell, None, None)

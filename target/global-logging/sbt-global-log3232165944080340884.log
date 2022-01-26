@@ -1,0 +1,12 @@
+[debug] > Exec(assembly, None, None)
+[debug] Evaluating tasks: assembly
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to C:\Users\LuisHernandoCorreaZa\IdeaProjects\cdrprocessor-20220120T210553Z-001\cdrprocessor\target\scala-2.11\classes ...
+[info] done compiling
+[info] compiling 3 Scala sources to C:\Users\LuisHernandoCorreaZa\IdeaProjects\cdrprocessor-20220120T210553Z-001\cdrprocessor\target\scala-2.11\classes ...
+[info] done compiling
+[warn] multiple main classes detected: run 'show discoveredMainClasses' to see the list
+[info] Strategy 'discard' was applied to 12 files (Run the task at debug level to see details)
+[info] Strategy 'first' was applied to a file (Run the task at debug level to see details)
+[success] Total time: 11 s, completed 26/01/2022 05:51:27 AM
+[debug] > Exec(idea-shell, None, None)

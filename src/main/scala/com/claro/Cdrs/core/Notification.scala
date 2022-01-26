@@ -1,12 +1,18 @@
-package com.claro.Cdrs.utils
+package com.claro.Cdrs.core
 
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import scala.sys.process._
+import org.apache.hadoop.conf.Configuration
+import org.apache.hadoop.fs.{FileSystem, Path}
+import org.apache.spark.sql._
 
+import scala.collection.mutable
 import scala.util.Try
 
-class notifications {
+import java.net.URI
+
+class Notification {
 
   def log(message: String): Unit = {
     val df = new SimpleDateFormat("yyyyMMdd' 'HH:mm")

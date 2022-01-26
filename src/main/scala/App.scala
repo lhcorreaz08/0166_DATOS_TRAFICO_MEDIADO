@@ -1,8 +1,9 @@
 import com.claro.Cdrs.core.MultiFileProcessor
 import com.claro.Cdrs.processors.{DataProcessor, VoiceProcessor}
+import com.claro.Cdrs.core.Notification
 import org.apache.spark.SparkConf
 import org.apache.spark.sql.SparkSession
-import com.claro.Cdrs.
+
 
 import scala.util.Try
 
@@ -37,6 +38,7 @@ object App {
       val JOB_NAME = args(6)
       val KAFKA_SERVERS = args(7)
       val KAFKA_TOPIC = args(8)
+
 
       val NUM_FILES = if (args.length > 9) Try(args(9).toInt).getOrElse(-1) else -1
 
