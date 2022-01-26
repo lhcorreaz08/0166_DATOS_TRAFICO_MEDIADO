@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="sbt: org.apache.hadoop:hadoop-aws:3.1.1.3.1.0.0-78:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/AppData/Local/Coursier/cache/v1/http/repo.hortonworks.com/content/repositories/releases/org/apache/hadoop/hadoop-aws/3.1.1.3.1.0.0-78/hadoop-aws-3.1.1.3.1.0.0-78.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/AppData/Local/Coursier/cache/v1/http/repo.hortonworks.com/content/repositories/releases/org/apache/hadoop/hadoop-aws/3.1.1.3.1.0.0-78/hadoop-aws-3.1.1.3.1.0.0-78-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

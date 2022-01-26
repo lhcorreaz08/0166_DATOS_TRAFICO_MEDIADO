@@ -8,8 +8,6 @@ import org.apache.spark.sql.functions._
 import org.apache.spark.sql.types.{StructType, TimestampType}
 import org.apache.spark.sql.{Column, DataFrame, SparkSession}
 
-
-
 import scala.collection.mutable
 import scala.util.{Random, Try}
 
@@ -251,7 +249,7 @@ abstract class MultiFileProcessor(
   def sendNotification(message: String): Unit = {
     Try {
       val argsNotification = Array(environment, workRepo, variableName, jobName, message)
-      Run_Scen_PK.Run_ssh.main(argsNotification)
+      //Run_Scen_PK.Run_ssh.main(argsNotification)
       //println("Log080: " + message )
     }
   }

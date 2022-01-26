@@ -1,5 +1,5 @@
 package com.claro.Cdrs.processors
-
+import java.text.SimpleDateFormat
 import com.claro.Cdrs.core.MultiFileProcessor
 import com.claro.Cdrs.entities.Entities
 import org.apache.spark.sql.{Column, SparkSession}
@@ -25,15 +25,17 @@ class DataProcessor(
     dates, numFiles, kafkaServers, kafkaTopic
   ) {
 
+
   override def getLoadControlTable: String = "datos.tbl_datos_control_cargue"
 
-  override def getTrafficTable: String = "datos.tbl_fact_datos_trafico"
+  override def getTrafficTable: String = "clientes.tbl_tmp_fact_datos_trafico_tmp"
 
   override def getSchema: StructType = Entities.dataSchema
 
   override def getTimestampField: String = "record_opening_time"
 
-  override def getColumnToKafka: Column = {
+
+    override def getColumnToKafka: Column = {
     import ss.implicits._
 
     concat(
@@ -59,6 +61,6 @@ class DataProcessor(
       s"record_sn, chargingid, first_sequence_number, last_sequence_number, " +
       s"cause_for_record_closing, icid, id_archivo, nodo_med, fuenteid, " +
       s"REGEXP_REPLACE(CONTENTURL,'[^a-zA-Z0-9\\u002F-\\u003A-\\u002E-\\u005F-\\u002D]+', ''), " +
-      s"fe_carga_dwh, id_archivo_dwh, val_uplink, val_downlink, trafficdate " +
-      s"FROM $tempViewName"
+      s"fe_carga_dwh, id_archivo_dwh, val_uplink, val_downlink, trafficdate, lpad(hour(current_timestamp()), 2, '0')  " +
+      s" FROM $tempViewName"
 }

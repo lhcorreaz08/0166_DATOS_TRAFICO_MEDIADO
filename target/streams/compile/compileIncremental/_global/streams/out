@@ -1,1 +1,6 @@
+[debug] [zinc] IncrementalCompile -----------
+[debug] IncrementalCompile.incrementalCompile
+[debug] previous = Stamps for: 53 products, 10 sources, 6 libraries
+[debug] current source = Set(${BASE}/src/main/scala/com/claro/Cdrs/entities/Entities.scala, ${BASE}/src/main/scala/com/claro/Cdrs/processors/VoiceProcessor.scala, ${BASE}/src/main/scala/com/claro/Cdrs/core/FirstLastProcessor.scala, ${BASE}/src/main/scala/com/claro/Cdrs/processors/DataProcessor.scala, ${BASE}/src/main/scala/App.scala, ${BASE}/src/main/scala/com/claro/Cdrs/processors/DataVoiceProcessor.scala, ${BASE}/src/main/scala/AppFirstLast.scala, ${BASE}/src/main/scala/com/claro/Cdrs/processors/KafkaMessageCdr.scala, ${BASE}/src/main/scala/com/claro/Cdrs/core/MultiFileProcessor.scala, ${BASE}/src/main/scala/com/claro/Cdrs/core/FileProcessor.scala)
+[debug] > initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())
 [debug] No changes

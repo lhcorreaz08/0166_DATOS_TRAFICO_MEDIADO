@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="sbt: com.everis.0091_ejecuta_escenario_sisnot:Run_Scen_PK:1.0:jar">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../Projects_/cdrprocessor/LIBS/0091_ejecuta_escenario_sisnot.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
