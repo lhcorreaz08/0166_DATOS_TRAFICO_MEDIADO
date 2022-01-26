@@ -2,6 +2,7 @@ import com.claro.Cdrs.core.MultiFileProcessor
 import com.claro.Cdrs.processors.{DataProcessor, VoiceProcessor}
 import org.apache.spark.SparkConf
 import org.apache.spark.sql.SparkSession
+import com.claro.Cdrs.
 
 import scala.util.Try
 
@@ -52,6 +53,7 @@ object App {
 
       val charset = "ISO-8859-1"
       val separator = "¦"
+
 
      val processor: MultiFileProcessor = PROCESS_TYPE match {
         case "VOZ" =>

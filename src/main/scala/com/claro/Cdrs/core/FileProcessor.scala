@@ -15,6 +15,8 @@ import scala.util.Try
   */
 class FileProcessor(protected val ss: SparkSession, protected val basePath: String) extends Serializable {
 
+  val nu = 2
+
   def listHDFSFolders(path: String): Array[String] = {
     val r = Seq("hdfs", "dfs", "-ls", path).!!
     val s = r.split("\n")
