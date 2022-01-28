@@ -57,6 +57,8 @@ object App {
       val separator = "¦"
 
 
+      println("SparkSession Create")
+
      val processor: MultiFileProcessor = PROCESS_TYPE match {
         case "VOZ" =>
           new VoiceProcessor(

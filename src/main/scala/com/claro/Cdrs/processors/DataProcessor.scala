@@ -28,9 +28,15 @@ class DataProcessor(
 
   override def getLoadControlTable: String = "datos.tbl_datos_control_cargue"
 
-  override def getTrafficTable: String = "clientes.tbl_tmp_fact_datos_trafico_tmp"
+
+
+  override def getTrafficTable: String = "datos.tbl_tmp_fact_datos_trafico_tmp"
+
+
 
   override def getSchema: StructType = Entities.dataSchema
+
+
 
   override def getTimestampField: String = "record_opening_time"
 
@@ -49,7 +55,7 @@ class DataProcessor(
   }
 
   override def getInsertTrafficSQL(tempViewName: String): String =
-    s"INSERT INTO $getTrafficTable PARTITION (fecha_trafico) " +
+    s"INSERT INTO $getTrafficTable PARTITION (fecha_trafico, fec_hora_trafico) " +
       s"SELECT record_type, served_msisdn, served_imsi, served_imei, " +
       s"served_pdp_address, SUBSTRING(served_msisdn, -10, 10), " +
       s"from_unixtime(unix_timestamp(record_opening_time, 'yyyyMMddHHmmss')), " +

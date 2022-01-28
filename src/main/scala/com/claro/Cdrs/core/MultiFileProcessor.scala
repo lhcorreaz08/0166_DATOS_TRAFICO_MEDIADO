@@ -27,33 +27,62 @@ abstract class MultiFileProcessor(
                                  ) extends FileProcessor(ss, path) {
 
   def process(): Unit = {
+
+//    Variables
+    println("Environtment: " + environment)
+    println("WorkRepo: " + workRepo)
+    println("variableName: " + variableName)
+    println("jobNam: " + jobName)
+    println("charset: " + charset)
+    println("path: " + path)
+    println("separator: " + separator)
+    println("dates: " + dates)
+    println("numFiles: " + numFiles)
+    println("kafkaServers: " + kafkaServers)
+    println("kafkaTopic: " + kafkaTopic)
+
+
+    println("MultiFile Processor Class Started")
+
+    println("Get date Folders")
     val folderDates = getFolderDates(dates)
 
+    println("Get hdfs date Folders")
     val preProcessFolders = getHDFSPreProcessedFolders(path)
 
+    println("GetFileList of preprocessFolders")
     val preProcessList = getFileList(preProcessFolders)
 
+    println("Validated Files")
     val validatedList = getValidatedFiles(preProcessList)
 
+    print("Validate List")
     processPreProcessedFiles(validatedList)
 
     val fileList = getFileList(getFolders(folderDates)).filterNot(file => folderDates.contains(file._1))
 
+    print("Validate Name Files")
     val filesToValidateName = getValidatedNameFiles(fileList)
 
+    print("Validate Name Error")
     val fileNamesError = filesToValidateName.filterNot(_._3).map(file => (file._1, file._2))
 
+    print("Processed Files Names with error")
     processFileNamesError(fileNamesError)
 
+    print("Files to validate name")
     val files = filesToValidateName.filter(_._3).map(file => (file._1, file._2))
 
+    print("Files to validate duplicated")
     val fValidateDuplicated = if (numFiles > 0 && numFiles < files.length) files.slice(0, numFiles) else files
 
+    print("Validated files")
     processValidatedFiles(getValidatedFiles(fValidateDuplicated))
 
     val dataToValidateError = getDataToProcess
 
     val errorFiles = processErrorFiles(dataToValidateError)
+
 
     val data = if (errorFiles != null && !errorFiles.isEmpty) {
       dataToValidateError.unpersist
@@ -61,8 +90,10 @@ abstract class MultiFileProcessor(
     } else
       dataToValidateError
 
+    print("Loading Files")
     processNewFiles(data)
 
+    print("Process To Load Control files ")
     val filesToMove = processLoadControl(data)
 
     new KafkaMessageCdr(kafkaServers, kafkaTopic)
