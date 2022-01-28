@@ -1,0 +1,126 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(early(addPluginSbtFile="""C:\Users\LuisHernandoCorreaZa\AppData\Local\Temp\idea2.sbt"""), None, None)
+[debug] > Exec(addPluginSbtFile="""C:\Users\LuisHernandoCorreaZa\AppData\Local\Temp\idea2.sbt""", None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.4.3 (Oracle Corporation Java 1.8.0_271)
+[debug]       Load.loadUnit: plugins took 143.2881ms
+[debug]       Load.loadUnit: defsScala took 0.456ms
+[debug] [Loading] Scanning directory C:\Users\LuisHernandoCorreaZa\.sbt\1.0\plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\LuisHernandoCorreaZa\.sbt\1.0\plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 29.7608 ms
+[debug]           Load.resolveProject(global-plugins) took 58.9195ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: C:\Users\LuisHernandoCorreaZa\.sbt\1.0\plugins, plugins: List(<none>))) took 136.058ms
+[debug] [Loading] Done in C:\Users\LuisHernandoCorreaZa\.sbt\1.0\plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 166.7027ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.3124ms
+[debug]     Load.loadUnit(file:/C:/Users/LuisHernandoCorreaZa/.sbt/1.0/plugins/, ...) took 321.5552ms
+[debug]   Load.apply: load took 509.9343ms
+[debug]   Load.apply: resolveProjects took 8.4154ms
+[debug]   Load.apply: finalTransforms took 92.8253ms
+[debug]   Load.apply: config.delegates took 12.3735ms
+[debug]   Load.apply: Def.make(settings)... took 1306.5997ms
+[debug]   Load.apply: structureIndex took 167.4477ms
+[debug]   Load.apply: mkStreams took 2.4656ms
+[info] loading global plugins from C:\Users\LuisHernandoCorreaZa\.sbt\1.0\plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Load.defaultLoad until apply took 5227.5122ms
+[debug]                 Load.loadUnit: plugins took 43.37ms
+[debug]                 Load.loadUnit: defsScala took 0.0037ms
+[debug] [Loading] Scanning directory C:\Users\LuisHernandoCorreaZa\IdeaProjects\cdrprocessor-20220120T210553Z-001\cdrprocessor\project\project
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\LuisHernandoCorreaZa\IdeaProjects\cdrprocessor-20220120T210553Z-001\cdrprocessor\project\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 3.2221 ms
+[debug]                     Load.resolveProject(cdrprocessor-build-build) took 2.1047ms
+[debug]                   Load.loadTransitive: finalizeProject(Project(id cdrprocessor-build-build, base: C:\Users\LuisHernandoCorreaZa\IdeaProjects\cdrprocessor-20220120T210553Z-001\cdrprocessor\project\project, plugins: List(<none>))) took 6.481ms
+[debug] [Loading] Done in C:\Users\LuisHernandoCorreaZa\IdeaProjects\cdrprocessor-20220120T210553Z-001\cdrprocessor\project\project, returning: (cdrprocessor-build-build)
+[debug]                 Load.loadUnit: loadedProjectsRaw took 10.5491ms
+[debug]                 Load.loadUnit: cleanEvalClasses took 0.0218ms
+[debug]               Load.loadUnit(file:/C:/Users/LuisHernandoCorreaZa/IdeaProjects/cdrprocessor-20220120T210553Z-001/cdrprocessor/project/project/, ...) took 55.3053ms
+[debug]             Load.apply: load took 57.8824ms
+[debug]             Load.apply: resolveProjects took 0.2187ms
+[debug]             Load.apply: finalTransforms took 23.1564ms
+[debug]             Load.apply: config.delegates took 1.2483ms
+[debug]             Load.apply: Def.make(settings)... took 129.5095ms
+[debug]             Load.apply: structureIndex took 44.0594ms
+[debug]             Load.apply: mkStreams took 0.0033ms
+[info] loading project definition from C:\Users\LuisHernandoCorreaZa\IdeaProjects\cdrprocessor-20220120T210553Z-001\cdrprocessor\project\project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]           Load.loadUnit: plugins took 497.7276ms
+[debug]           Load.loadUnit: defsScala took 0.0056ms
+[debug] [Loading] Scanning directory C:\Users\LuisHernandoCorreaZa\IdeaProjects\cdrprocessor-20220120T210553Z-001\cdrprocessor\project
+[debug]             Load.loadUnit: mkEval took 10.7136ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\LuisHernandoCorreaZa\IdeaProjects\cdrprocessor-20220120T210553Z-001\cdrprocessor\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 2.4079 ms
+[info] loading settings for project cdrprocessor-build from assembly.sbt,idea2.sbt ...
+[debug]               Load.resolveProject(cdrprocessor-build) took 3.9789ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id cdrprocessor-build, base: C:\Users\LuisHernandoCorreaZa\IdeaProjects\cdrprocessor-20220120T210553Z-001\cdrprocessor\project, plugins: List(<none>))) took 7.0288ms
+[debug] [Loading] Done in C:\Users\LuisHernandoCorreaZa\IdeaProjects\cdrprocessor-20220120T210553Z-001\cdrprocessor\project, returning: (cdrprocessor-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 237.9561ms
+[debug]           Load.loadUnit: cleanEvalClasses took 6.2606ms
+[debug]         Load.loadUnit(file:/C:/Users/LuisHernandoCorreaZa/IdeaProjects/cdrprocessor-20220120T210553Z-001/cdrprocessor/project/, ...) took 743.5488ms
+[debug]       Load.apply: load took 746.7877ms
+[debug]       Load.apply: resolveProjects took 0.2518ms
+[debug]       Load.apply: finalTransforms took 11.4951ms
+[debug]       Load.apply: config.delegates took 0.4295ms
+[debug]       Load.apply: Def.make(settings)... took 81.6273ms
+[debug]       Load.apply: structureIndex took 32.2823ms
+[debug]       Load.apply: mkStreams took 0.0025ms
+[info] loading project definition from C:\Users\LuisHernandoCorreaZa\IdeaProjects\cdrprocessor-20220120T210553Z-001\cdrprocessor\project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 1294.9653ms
+[debug]     Load.loadUnit: defsScala took 0.0049ms
+[debug] [Loading] Scanning directory C:\Users\LuisHernandoCorreaZa\IdeaProjects\cdrprocessor-20220120T210553Z-001\cdrprocessor
+[debug]       Load.loadUnit: mkEval took 0.4105ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\LuisHernandoCorreaZa\IdeaProjects\cdrprocessor-20220120T210553Z-001\cdrprocessor, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbtassembly.AssemblyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(org.jetbrains.sbt.StructurePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(org.jetbrains.sbt.IdeaShellPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbtassembly.AssemblyPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.StructurePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.IdeaShellPlugin))), Clause(And(Set(Atom(sbt.plugins.CorePlugin), Atom(sbt.plugins.JvmPlugin))),Set(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.SemanticdbPlugin,org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin,sbt.plugins.JUnitXmlReportPlugin,sbtassembly.AssemblyPlugin,org.jetbrains.sbt.IdeaShellPlugin,org.jetbrains.sbt.StructurePlugin,sbt.plugins.MiniDependencyTreePlugin)
+[debug] Plugins.deducer#function took 3.6314 ms
+[info] loading settings for project cdrprocessor from build.sbt ...
+[debug]         Load.resolveProject(cdrprocessor) took 40.3792ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id cdrprocessor, base: C:\Users\LuisHernandoCorreaZa\IdeaProjects\cdrprocessor-20220120T210553Z-001\cdrprocessor, plugins: List(<none>))) took 45.745ms
+[debug] [Loading] Done in C:\Users\LuisHernandoCorreaZa\IdeaProjects\cdrprocessor-20220120T210553Z-001\cdrprocessor, returning: (cdrprocessor)
+[debug]     Load.loadUnit: loadedProjectsRaw took 320.1718ms
+[debug]     Load.loadUnit: cleanEvalClasses took 11.4542ms
+[debug]   Load.loadUnit(file:/C:/Users/LuisHernandoCorreaZa/IdeaProjects/cdrprocessor-20220120T210553Z-001/cdrprocessor/, ...) took 1627.5022ms
+[debug] Load.apply: load took 1629.779ms
+[debug] Load.apply: resolveProjects took 0.1302ms
+[debug] Load.apply: finalTransforms took 36.4799ms
+[debug] Load.apply: config.delegates took 0.4698ms
+[debug] Load.apply: Def.make(settings)... took 87.7988ms
+[debug] Load.apply: structureIndex took 27.404ms
+[debug] Load.apply: mkStreams took 0.0028ms
+[info] set current project to 0080_DATOS_CARGUE_RE-BLT (in build file:/C:/Users/LuisHernandoCorreaZa/IdeaProjects/cdrprocessor-20220120T210553Z-001/cdrprocessor/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(; set ideaPort in Global := 60270 ; idea-shell, None, None)
+[debug] > Exec(set ideaPort in Global := 60270, None, None)
+[info] Defining Global / ideaPort
+[info] The new value will be used by Compile / compile, Test / compile
+[debug] Defining 
+[debug] 	Global / ideaPort
+[debug] 
+[debug] The new value will be used by 
+[debug] 	Compile / compile
+[debug] 	Test / compile
+[info] Reapplying settings...
+[info] set current project to 0080_DATOS_CARGUE_RE-BLT (in build file:/C:/Users/LuisHernandoCorreaZa/IdeaProjects/cdrprocessor-20220120T210553Z-001/cdrprocessor/)
+[debug] > Exec(idea-shell, None, None)
