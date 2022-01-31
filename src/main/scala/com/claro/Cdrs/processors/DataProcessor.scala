@@ -30,7 +30,7 @@ class DataProcessor(
 
 
 
-  //override def getTrafficTable: String = "datos.tbl_tmp_fact_datos_trafico_tmp"
+  //override def getTrafficTable: String = "datos.tbl_tmp_fact_datos_trafico"
 
   override def getTrafficTable: String = "datos.tbl_fact_datos_trafico"
 
